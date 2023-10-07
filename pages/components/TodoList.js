@@ -9,7 +9,7 @@ const TodoList = () => {
   const [editedTaskText, setEditedTaskText] = useState('');
 
 
-  let baseUrl = 'http://localhost:3000/api/todo'
+  let baseUrl = 'https://todo-app-next-frontend.vercel.app'
   // Function to fetch todos from the API
   const fetchTodos = async () => {
     try {

@@ -1,11 +1,11 @@
 
-process
+
 import mongoose from 'mongoose';
 
 const connectToDatabase = async () => {
   try {
     
-    await mongoose.connect(process.env.MONGDB_URL, {
+    await mongoose.connect('mongodb+srv://todo:Admin786@cluster0.f9iiqip.mongodb.net/todo?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
