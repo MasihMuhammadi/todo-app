@@ -1,11 +1,11 @@
 
-
+process
 import mongoose from 'mongoose';
 
 const connectToDatabase = async () => {
   try {
     
-    await mongoose.connect(MONGDB_URL, {
+    await mongoose.connect(process.env.MONGDB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
